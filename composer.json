@@ -1,0 +1,13 @@
+{
+    "name": "graywrk/brain-games",
+    "bin": ["bin/brain-games"],
+    "description": "Brain Games",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Serj Dmitriev",
+            "email": "graywrk@gmail.com"
+        }
+    ],
+    "require": {}
+}
