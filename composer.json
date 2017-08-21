@@ -15,5 +15,9 @@
         },
         "files": ["src/Cli.php"]
     },
-    "require": {"wp-cli/php-cli-tools": "*"}
+    "scripts": {
+        "phpcs": "phpcs"
+    },
+    "require": {"wp-cli/php-cli-tools": "*"},
+    "require-dev": {"squizlabs/php_codesniffer": "*"}
 }
