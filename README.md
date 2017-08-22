@@ -12,3 +12,4 @@ composer global require graywrk/brain-games:dev-master
 ## Run
 brain-games
 brain-even
+brain-calc
