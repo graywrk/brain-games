@@ -17,16 +17,16 @@ function brainEven()
         $question = rand();
         $isEven = (($question % 2) == 0);
         $correctAnswer = $isEven ? 'yes' : 'no';
-        line('Question: ' . $question);
+        line("Question: {$question}");
         $userAnswer = prompt('Your answer: ');
         if ($userAnswer == $correctAnswer) {
             line('Correct!');
         } else {
-            line($userAnswer . ' is wrong answer ;(. Correct answer was ' . $correctAnswer);
-            line("Let's try again, " . $userName);
+            line("'{$userAnswer}' is wrong answer ;(. Correct answer was '{$correctAnswer}'");
+            line("Let's try again, {$userName}");
             exit(0);
         }
     }
 
-    line('Congratulations, ' . $userName . '!');
+    line("Congratulations, {$userName}!");
 }
