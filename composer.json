@@ -1,6 +1,11 @@
 {
     "name": "graywrk/brain-games",
-    "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc"],
+    "bin": [
+            "bin/brain-games",
+            "bin/brain-even",
+            "bin/brain-calc",
+            "bin/brain-gcd"
+           ],
     "description": "Brain Games",
     "type": "project",
     "authors": [
