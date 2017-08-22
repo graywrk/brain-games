@@ -12,8 +12,12 @@ function printRules()
 function getQuestion()
 {
     $question = rand();
-    $isEven = (($question % 2) == 0);
-    $correctAnswer = $isEven ? 'yes' : 'no';
+    $correctAnswer = isEven($question) ? 'yes' : 'no';
 
     return array($question, $correctAnswer);
+}
+
+function isEven($number)
+{
+    return ($number % 2) == 0 ? true : false;
 }
