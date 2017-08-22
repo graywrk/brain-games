@@ -25,6 +25,10 @@ function run($game)
             $getQuestion = '\BrainGames\Games\GcdGame\getQuestion';
             $printRules =  '\BrainGames\Games\GcdGame\printRules';
             break;
+        case 'balance':
+            require_once "BalanceGame.php";
+            $getQuestion = '\BrainGames\Games\BalanceGame\getQuestion';
+            $printRules = '\BrainGames\Games\BalanceGame\printRules';
     }
 
     return function () use ($getQuestion, $printRules) {

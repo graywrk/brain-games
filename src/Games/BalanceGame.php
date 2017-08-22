@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Games\EvenGame;
+namespace BrainGames\Games\BalanceGame;
 
 use function \cli\line;
 
