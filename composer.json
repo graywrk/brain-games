@@ -18,6 +18,7 @@
     "scripts": {
         "phpcs": "phpcs"
     },
-    "require": {"wp-cli/php-cli-tools": "*"},
+    "require": {"wp-cli/php-cli-tools": "*",
+        "graywrk/brain-games": "dev-master"},
     "require-dev": {"squizlabs/php_codesniffer": "*"}
 }

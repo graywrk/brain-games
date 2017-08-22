@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f1182e0068d802a5ac8715b569e375e6",
+    "content-hash": "24aee42a74b17ccd4a45b71e1f6ace04",
     "packages": [
         {
             "name": "wp-cli/php-cli-tools",
@@ -129,7 +129,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "graywrk/brain-games": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
