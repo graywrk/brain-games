@@ -1,6 +1,6 @@
 {
     "name": "graywrk/brain-games",
-    "bin": ["bin/brain-games"],
+    "bin": ["bin/brain-games", "bin/brain-even"],
     "description": "Brain Games",
     "type": "project",
     "authors": [
@@ -13,7 +13,7 @@
         "psr-4": {
             "BrainGames\\": "src/"
         },
-        "files": ["src/Cli.php"]
+        "files": ["src/Cli.php", "src/Games.php"]
     },
     "scripts": {
         "phpcs": "phpcs"
