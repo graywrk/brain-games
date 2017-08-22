@@ -2,9 +2,6 @@
 
 namespace BrainGames\Games;
 
-require_once "EvenGame.php";
-require_once "CalcGame.php";
-
 use function \cli\line;
 use function \cli\prompt;
 
@@ -14,10 +11,12 @@ function run($game)
 {
     switch ($game) {
         case 'calc':
+            require_once "CalcGame.php";
             $getQuestion = '\BrainGames\Games\CalcGame\getQuestion';
             $printRules =  '\BrainGames\Games\CalcGame\printRules';
             break;
         case 'even':
+            require_once "EvenGame.php";
             $getQuestion = '\BrainGames\Games\EvenGame\getQuestion';
             $printRules =  '\BrainGames\Games\EvenGame\printRules';
             break;
