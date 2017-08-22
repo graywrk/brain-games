@@ -7,31 +7,11 @@ use function \cli\prompt;
 
 const ATTEMPTS_COUNT = 3;
 
-function run($game)
+function game($file, $getRules, $getQuestionAndAnswer)
 {
-    switch ($game) {
-        case 'calc':
-            require_once "Calc.php";
-            $getQuestionAndAnswer = '\BrainGames\Games\Calc\getQuestionAndAnswer';
-            $getRules =  '\BrainGames\Games\Calc\getRules';
-            break;
-        case 'even':
-            require_once "Even.php";
-            $getQuestionAndAnswer = '\BrainGames\Games\Even\getQuestionAndAnswer';
-            $getRules =  '\BrainGames\Games\Even\getRules';
-            break;
-        case 'gcd':
-            require_once "Gcd.php";
-            $getQuestionAndAnswer = '\BrainGames\Games\Gcd\getQuestionAndAnswer';
-            $getRules =  '\BrainGames\Games\Gcd\getRules';
-            break;
-        case 'balance':
-            require_once "Balance.php";
-            $getQuestionAndAnswer = '\BrainGames\Games\Balance\getQuestionAndAnswer';
-            $getRules = '\BrainGames\Games\Balance\getRules';
-    }
-
-    return function () use ($getQuestionAndAnswer, $getRules) {
+    $runGame = function () use ($file, $getRules, $getQuestionAndAnswer){
+        require_once $file;
+        
         line('Welcome to the Brain Games!');
         line($getRules());
         $userName = prompt('May I have your name?');
@@ -51,4 +31,6 @@ function run($game)
 
         line("Congratulations, {$userName}!");
     };
+
+    return $runGame;
 }
