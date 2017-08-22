@@ -22,8 +22,9 @@ function balance($number)
     $digits = num2digits($number);
     sort($digits);
 
-    if (isBalanced($number))
+    if (isBalanced($number)) {
         return digits2num($digits);
+    }
 
     $min = $digits[0];
     $max = $digits[count($digits) - 1];
