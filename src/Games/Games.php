@@ -21,10 +21,10 @@ function run($game)
             $printRules =  '\BrainGames\Games\EvenGame\printRules';
             break;
         case 'gcd':
-          require_once "GcdGame.php";
-          $getQuestion = '\BrainGames\Games\GcdGame\getQuestion';
-          $printRules =  '\BrainGames\Games\GcdGame\printRules';
-          break;
+            require_once "GcdGame.php";
+            $getQuestion = '\BrainGames\Games\GcdGame\getQuestion';
+            $printRules =  '\BrainGames\Games\GcdGame\printRules';
+            break;
     }
 
     return function () use ($getQuestion, $printRules) {
