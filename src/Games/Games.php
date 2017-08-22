@@ -9,9 +9,9 @@ const ATTEMPTS_COUNT = 3;
 
 function game($file, $getRules, $getQuestionAndAnswer)
 {
-    $runGame = function () use ($file, $getRules, $getQuestionAndAnswer){
+    $runGame = function () use ($file, $getRules, $getQuestionAndAnswer) {
         require_once $file;
-        
+
         line('Welcome to the Brain Games!');
         line($getRules());
         $userName = prompt('May I have your name?');
