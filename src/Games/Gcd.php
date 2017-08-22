@@ -4,9 +4,9 @@ namespace BrainGames\Games\Gcd;
 
 use function \cli\line;
 
-function printRules()
+function getRules()
 {
-    line('Find the greatest common divisor of given numbers.');
+    return 'Find the greatest common divisor of given numbers.';
 }
 
 function getQuestionAndAnswer()

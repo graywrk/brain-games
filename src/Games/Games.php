@@ -13,27 +13,27 @@ function run($game)
         case 'calc':
             require_once "Calc.php";
             $getQuestionAndAnswer = '\BrainGames\Games\Calc\getQuestionAndAnswer';
-            $printRules =  '\BrainGames\Games\CalcGame\printRules';
+            $getRules =  '\BrainGames\Games\CalcGame\getRules';
             break;
         case 'even':
             require_once "Even.php";
             $getQuestionAndAnswer = '\BrainGames\Games\Even\getQuestionAndAnswer';
-            $printRules =  '\BrainGames\Games\EvenGame\printRules';
+            $getRules =  '\BrainGames\Games\EvenGame\getRules';
             break;
         case 'gcd':
             require_once "Gcd.php";
             $getQuestionAndAnswer = '\BrainGames\Games\Gcd\getQuestionAndAnswer';
-            $printRules =  '\BrainGames\Games\GcdGame\printRules';
+            $getRules =  '\BrainGames\Games\GcdGame\getRules';
             break;
         case 'balance':
             require_once "Balance.php";
             $getQuestionAndAnswer = '\BrainGames\Games\Balance\getQuestionAndAnswer';
-            $printRules = '\BrainGames\Games\BalanceGame\printRules';
+            $getRules = '\BrainGames\Games\BalanceGame\getRules';
     }
 
     return function () use ($getQuestionAndAnswer, $printRules) {
         line('Welcome to the Brain Games!');
-        $printRules();
+        line($getRules());
         $userName = prompt('May I have your name?');
         line("Hello, {$userName}!");
         for ($i = 0; $i < ATTEMPTS_COUNT; $i++) {

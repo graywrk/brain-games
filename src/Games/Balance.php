@@ -4,9 +4,9 @@ namespace BrainGames\Games\Balance;
 
 use function \cli\line;
 
-function printRules()
+function getRules()
 {
-    line('Balance the given number.');
+    return 'Balance the given number.';
 }
 
 function getQuestionAndAnswer()

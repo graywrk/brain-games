@@ -4,9 +4,9 @@ namespace BrainGames\Games\Even;
 
 use function \cli\line;
 
-function printRules()
+function getRules()
 {
-    line('Answer "yes" if number even otherwise answer "no".');
+    return 'Answer "yes" if number even otherwise answer "no".';
 }
 
 function getQuestionAndAnswer()

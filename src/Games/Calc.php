@@ -4,9 +4,9 @@ namespace BrainGames\Games\Calc;
 
 use function \cli\line;
 
-function printRules()
+function getRules()
 {
-    line('What is the result of the expression?');
+    return 'What is the result of the expression?';
 }
 
 function getQuestionAndAnswer()
