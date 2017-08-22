@@ -9,7 +9,7 @@ function printRules()
     line('Find the greatest common divisor of given numbers.');
 }
 
-function getQuestion()
+function getQuestionAndAnswer()
 {
     $first = rand();
     $second = rand();

@@ -9,7 +9,7 @@ function printRules()
     line('What is the result of the expression?');
 }
 
-function getQuestion()
+function getQuestionAndAnswer()
 {
     $first = rand();
     $second = rand();

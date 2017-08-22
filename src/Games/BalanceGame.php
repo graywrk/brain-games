@@ -9,7 +9,7 @@ function printRules()
     line('Balance the given number.');
 }
 
-function getQuestion()
+function getQuestionAndAnswer()
 {
     $question = rand();
     $correctAnswer = balance($question);

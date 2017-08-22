@@ -9,7 +9,7 @@ function printRules()
     line('Answer "yes" if number even otherwise answer "no".');
 }
 
-function getQuestion()
+function getQuestionAndAnswer()
 {
     $question = rand();
     $correctAnswer = isEven($question) ? 'yes' : 'no';
