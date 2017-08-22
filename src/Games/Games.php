@@ -28,7 +28,7 @@ function run($game)
         $printRules();
         $userName = prompt('May I have your name?');
         line("Hello, {$userName}!");
-        for ($i=0; $i<ATTEMPTS; $i++) {
+        for ($i = 0; $i < ATTEMPTS; $i++) {
             list($question, $correctAnswer) = $getQuestion();
             line("Question: {$question}");
             $userAnswer = prompt('Your answer');
