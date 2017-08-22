@@ -43,5 +43,4 @@ function run($game)
 
         line("Congratulations, {$userName}!");
     };
-
 }
