@@ -50,7 +50,7 @@ function isBalanced($number)
 {
     $digits = num2digits($number);
 
-    return (max($digits) - min($digits) <= 1) ? true : false;
+    return (max($digits) - min($digits) <= 1);
 }
 
 function num2digits($number)
