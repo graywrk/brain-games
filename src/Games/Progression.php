@@ -5,7 +5,8 @@ namespace BrainGames\Games\Progression;
 const PROGRESSION_LENGTH = 10;
 const PROGRESSION_MAX_INCREMENT = 10;
 
-function run() {
+function run()
+{
     $getRules = function () {
         return 'What number is missing in this progression?';
     };

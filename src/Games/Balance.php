@@ -2,7 +2,8 @@
 
 namespace BrainGames\Games\Balance;
 
-function run() {
+function run()
+{
     $getRules = function () {
         return 'Balance the given number.';
     };
@@ -15,7 +16,7 @@ function run() {
     };
 
     $game = \BrainGames\Games\game($getRules, $getQuestionAndAnswer);
-    $game();    
+    $game();
 }
 
 function balance($number)

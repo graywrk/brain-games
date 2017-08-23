@@ -2,7 +2,8 @@
 
 namespace BrainGames\Games\Calc;
 
-function run() {
+function run()
+{
     $getRules = function () {
         return 'What is the result of the expression?';
     };

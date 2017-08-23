@@ -2,7 +2,8 @@
 
 namespace BrainGames\Games\Prime;
 
-function run() {
+function run()
+{
     $getRules = function () {
         return 'Answer "yes" if number prime otherwise answer "no".';
     };
