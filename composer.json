@@ -6,7 +6,8 @@
             "bin/brain-calc",
             "bin/brain-gcd",
             "bin/brain-balance",
-            "bin/brain-progression"
+            "bin/brain-progression",
+            "bin/brain-prime"
            ],
     "description": "Brain Games",
     "type": "project",
