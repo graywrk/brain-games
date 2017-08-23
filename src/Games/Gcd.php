@@ -2,19 +2,22 @@
 
 namespace BrainGames\Games\Gcd;
 
-function getRules()
-{
-    return 'Find the greatest common divisor of given numbers.';
-}
+function run() {
+    $getRules = function () {
+        return 'Find the greatest common divisor of given numbers.';
+    };
 
-function getQuestionAndAnswer()
-{
-    $first = rand();
-    $second = rand();
-    $question = "{$first} {$second}";
-    $correctAnswer = gcd($first, $second);
+    $getQuestionAndAnswer = function () {
+        $first = rand();
+        $second = rand();
+        $question = "{$first} {$second}";
+        $correctAnswer = gcd($first, $second);
 
-    return array($question, $correctAnswer);
+        return array($question, $correctAnswer);
+    };
+
+    $game = \BrainGames\Games\game($getRules, $getQuestionAndAnswer);
+    $game();
 }
 
 function gcd($first, $second)

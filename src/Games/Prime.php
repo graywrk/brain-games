@@ -2,18 +2,21 @@
 
 namespace BrainGames\Games\Prime;
 
-function getRules()
-{
-    return 'Answer "yes" if number prime otherwise answer "no".';
-}
+function run() {
+    $getRules = function () {
+        return 'Answer "yes" if number prime otherwise answer "no".';
+    };
 
-function getQuestionAndAnswer()
-{
-    $question = rand() + 2;
+    $getQuestionAndAnswer = function () {
+        $question = rand() + 2;
 
-    $correctAnswer = isPrime($question) ? 'yes' : 'no';
+        $correctAnswer = isPrime($question) ? 'yes' : 'no';
 
-    return array($question, $correctAnswer);
+        return array($question, $correctAnswer);
+    };
+
+    $game = \BrainGames\Games\game($getRules, $getQuestionAndAnswer);
+    $game();
 }
 
 function isPrime($number)

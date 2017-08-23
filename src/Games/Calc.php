@@ -2,33 +2,36 @@
 
 namespace BrainGames\Games\Calc;
 
-function getRules()
-{
-    return 'What is the result of the expression?';
-}
+function run() {
+    $getRules = function () {
+        return 'What is the result of the expression?';
+    };
 
-function getQuestionAndAnswer()
-{
-    $first = rand();
-    $second = rand();
+    $getQuestionAndAnswer = function () {
+        $first = rand();
+        $second = rand();
 
-    $opCode = rand(0, 2);
-    switch ($opCode) {
-        case '0':
-            $op = '+';
-            $correctAnswer = $first + $second;
-            break;
-        case '1':
-            $op = '-';
-            $correctAnswer = $first - $second;
-            break;
-        case '2':
-            $op = '*';
-            $correctAnswer = $first * $second;
-            break;
-    }
+        $opCode = rand(0, 2);
+        switch ($opCode) {
+            case '0':
+                $op = '+';
+                $correctAnswer = $first + $second;
+                break;
+            case '1':
+                $op = '-';
+                $correctAnswer = $first - $second;
+                break;
+            case '2':
+                $op = '*';
+                $correctAnswer = $first * $second;
+                break;
+        }
 
-    $question = "{$first} {$op} {$second}";
+        $question = "{$first} {$op} {$second}";
 
-    return array($question, $correctAnswer);
+        return array($question, $correctAnswer);
+    };
+
+    $game = \BrainGames\Games\game($getRules, $getQuestionAndAnswer);
+    $game();
 }

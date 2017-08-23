@@ -2,17 +2,20 @@
 
 namespace BrainGames\Games\Balance;
 
-function getRules()
-{
-    return 'Balance the given number.';
-}
+function run() {
+    $getRules = function () {
+        return 'Balance the given number.';
+    };
 
-function getQuestionAndAnswer()
-{
-    $question = rand();
-    $correctAnswer = balance($question);
+    $getQuestionAndAnswer = function () {
+        $question = rand();
+        $correctAnswer = balance($question);
 
-    return array($question, $correctAnswer);
+        return array($question, $correctAnswer);
+    };
+
+    $game = \BrainGames\Games\game($getRules, $getQuestionAndAnswer);
+    $game();    
 }
 
 function balance($number)

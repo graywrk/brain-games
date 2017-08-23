@@ -7,11 +7,9 @@ use function \cli\prompt;
 
 const ATTEMPTS_COUNT = 3;
 
-function game($file, $getRules, $getQuestionAndAnswer)
+function game($getRules, $getQuestionAndAnswer)
 {
-    $runGame = function () use ($file, $getRules, $getQuestionAndAnswer) {
-        require_once $file;
-
+    return function () use ($getRules, $getQuestionAndAnswer) {
         line('Welcome to the Brain Games!');
         line($getRules());
         $userName = prompt('May I have your name?');
@@ -31,6 +29,4 @@ function game($file, $getRules, $getQuestionAndAnswer)
 
         line("Congratulations, {$userName}!");
     };
-
-    return $runGame;
 }

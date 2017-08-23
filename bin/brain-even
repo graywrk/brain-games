@@ -9,7 +9,4 @@ if (file_exists($autoloadPath1)) {
     require_once $autoloadPath2;
 }
 
-use function BrainGames\Games\game;
-
-$game = game('Even.php', '\BrainGames\Games\Even\getRules', '\BrainGames\Games\Even\getQuestionAndAnswer');
-$game();
+BrainGames\Games\Even\run();
