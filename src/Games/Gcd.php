@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Gcd;
 
-use function \cli\line;
-
 function getRules()
 {
     return 'Find the greatest common divisor of given numbers.';

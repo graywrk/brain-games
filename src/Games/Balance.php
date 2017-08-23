@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Balance;
 
-use function \cli\line;
-
 function getRules()
 {
     return 'Balance the given number.';

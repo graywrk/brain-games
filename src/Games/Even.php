@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Even;
 
-use function \cli\line;
-
 function getRules()
 {
     return 'Answer "yes" if number even otherwise answer "no".';

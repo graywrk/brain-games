@@ -2,8 +2,6 @@
 
 namespace BrainGames\Games\Calc;
 
-use function \cli\line;
-
 function getRules()
 {
     return 'What is the result of the expression?';
